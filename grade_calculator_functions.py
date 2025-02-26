@@ -1,7 +1,9 @@
 def get_student_score():
     """
-    Prompts the user to enter a valid score and returns it as a float.
-    Ensures the input is a number between 0 and 100.
+    Handles user input to obtain the student's score.
+
+    Returns:
+        float: The validated student score.
     """
     while True:
         try:
@@ -15,11 +17,11 @@ def get_student_score():
 
 def calculate_grade(score):
     """
-    Determines the letter grade based on the score.
-    
+    Determines the letter grade based on the given score.
+
     Args:
         score (float): The student's numerical score.
-    
+
     Returns:
         str: The corresponding letter grade.
     """
